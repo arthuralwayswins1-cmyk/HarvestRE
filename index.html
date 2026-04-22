@@ -201,7 +201,6 @@ height: 3px; background: var(–gold); border-radius: 12px 12px 0 0;
 font-family: var(–serif); font-size: 22px; line-height: 1.5;
 color: var(–navy); margin: 0; font-weight: 500; text-align: center;
 }
-.hero-diagram-img-wrap {
 width: 100%; max-width: 960px;
 background: var(–white); border: 1px solid var(–line);
 border-radius: 12px; box-shadow: var(–card-shadow);
@@ -232,32 +231,55 @@ flex-shrink: 0;
 /* Geometric accent art */
 /* hero uses full-width diagram layout */
 
-/* Hero two-column layout */
-.hero-row {
-position: relative; z-index: 2;
+/* Hero two-column top row */
+.hero-top-row {
 display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 48px;
-align-items: center;
+gap: 40px;
+align-items: start;
+margin-bottom: 24px;
 }
-.hero-diagram-col {
+.hero-top-left {}
+.hero-callout {
+background: var(–white);
+border: 1px solid var(–line);
+border-radius: 12px;
+padding: 28px 32px;
+box-shadow: var(–card-shadow);
+margin-top: 8px;
+}
+.hero-callout p {
+font-size: 16px;
+line-height: 1.7;
+color: var(–body);
+margin: 0;
+}
+.hero-below-text {
+margin-bottom: 24px;
+}
+.hero-below-text p {
+font-size: 16px;
+line-height: 1.7;
+color: var(–body);
+max-width: 720px;
+}
+.hero-diagram-wrap {
 display: flex;
-align-items: center;
 justify-content: center;
+margin: 32px 0 24px;
 }
 .hero-diagram-svg {
 width: 100%;
-max-width: 480px;
+max-width: 600px;
 height: auto;
 }
 .hero-banner {
-position: relative; z-index: 2;
 background: var(–white);
 border: 1px solid var(–line);
 border-radius: 12px;
 padding: 28px 36px;
 box-shadow: var(–card-shadow);
-margin-top: 36px;
+position: relative;
 margin-bottom: 24px;
 }
 .hero-banner::before {
@@ -528,7 +550,6 @@ margin: 0;
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
 .hero-diagram-card p { font-size: 18px; }
-.hero-diagram-img-wrap { padding: 16px; }
 .card-grid-4 { grid-template-columns: repeat(2, 1fr); }
 .report-tiles { grid-template-columns: repeat(2, 1fr); }
 .bio-layout { grid-template-columns: 1fr; gap: 40px; }
@@ -555,8 +576,7 @@ margin: 0;
 .footer-links { flex-direction: column; gap: 32px; }
 .footer-bottom { flex-direction: column; gap: 8px; }
 .form-row-half { grid-template-columns: 1fr; }
-.hero-row { grid-template-columns: 1fr; gap: 32px; }
-.hero-diagram-col { margin-top: 16px; }
+.hero-top-row { grid-template-columns: 1fr; gap: 24px; }
 .hero-actions { flex-direction: column; }
 .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
 }
@@ -601,84 +621,85 @@ margin: 0;
 
   <section class="hero">
     <div class="container">
-      <div class="hero-row">
-        <div class="hero-content" style="max-width:720px;">
-          <span class="label">Independent Real Estate Advisory</span>
-          <h1>Clear judgment for real estate decisions where price, risk, and structure all <span class="accent">matter.</span></h1>
-          <p class="hero-lead">Harvest Real Estate Advisory is brought in before an important decision is made to test the economics, identify the real risks, and recommend a better structured path forward.</p>
-          <div class="hero-actions">
-            <button class="btn-primary" onclick="showPage('contact')">Start a Conversation
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-            <button class="btn-secondary" onclick="showPage('engagements')">Representative Engagements</button>
-          </div>
-        </div>
-        <div class="hero-diagram-col">
-          <svg class="hero-diagram-svg" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" fill="none">
-            <g font-family="'Source Sans 3', sans-serif" font-size="12" font-weight="500">
-              <rect x="16" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="54" y="33" text-anchor="middle" fill="#3D4F63">Broker</text>
-              <rect x="108" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="146" y="33" text-anchor="middle" fill="#3D4F63">Attorney</text>
-              <rect x="200" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="238" y="33" text-anchor="middle" fill="#3D4F63">Lender</text>
-              <rect x="292" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="330" y="33" text-anchor="middle" fill="#3D4F63">Engineer</text>
-              <rect x="384" y="12" width="84" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="426" y="33" text-anchor="middle" fill="#3D4F63">Accountant</text>
-            </g>
-            <g stroke="#B0BCC8" stroke-width="1.2">
-              <line x1="54" y1="44" x2="54" y2="80"/>
-              <line x1="146" y1="44" x2="146" y2="80"/>
-              <line x1="238" y1="44" x2="238" y2="80"/>
-              <line x1="330" y1="44" x2="330" y2="80"/>
-              <line x1="426" y1="44" x2="426" y2="80"/>
-              <line x1="54" y1="80" x2="426" y2="80"/>
-              <line x1="240" y1="80" x2="240" y2="100"/>
-            </g>
-            <rect x="172" y="100" width="136" height="40" rx="6" fill="#1B2B4B"/>
-            <text x="240" y="126" text-anchor="middle" fill="#FFFFFF" font-family="'Source Sans 3', sans-serif" font-size="15" font-weight="700" letter-spacing="0.12em">HARVEST</text>
-            <g stroke="#B0BCC8" stroke-width="1.2">
-              <line x1="240" y1="140" x2="240" y2="170"/>
-              <line x1="60" y1="170" x2="420" y2="170"/>
-              <line x1="60" y1="170" x2="60" y2="192"/>
-              <line x1="150" y1="170" x2="150" y2="192"/>
-              <line x1="240" y1="170" x2="240" y2="192"/>
-              <line x1="330" y1="170" x2="330" y2="192"/>
-              <line x1="420" y1="170" x2="420" y2="192"/>
-            </g>
-            <g font-family="'Source Sans 3', sans-serif" font-size="11" font-weight="500">
-              <polygon points="60,192 100,214 60,236 20,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="60" y="218" text-anchor="middle" fill="#3D4F63">Price</text>
-              <polygon points="150,192 190,214 150,236 110,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="150" y="218" text-anchor="middle" fill="#3D4F63">Risk</text>
-              <polygon points="240,192 284,214 240,236 196,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="240" y="218" text-anchor="middle" fill="#3D4F63">Structure</text>
-              <polygon points="330,192 378,214 330,236 282,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="330" y="218" text-anchor="middle" fill="#3D4F63">Operations</text>
-              <polygon points="420,192 468,214 420,236 372,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-              <text x="420" y="218" text-anchor="middle" fill="#3D4F63">Performance</text>
-            </g>
-            <g stroke="#B0BCC8" stroke-width="1.2">
-              <line x1="60" y1="236" x2="60" y2="270"/>
-              <line x1="150" y1="236" x2="150" y2="270"/>
-              <line x1="240" y1="236" x2="240" y2="270"/>
-              <line x1="330" y1="236" x2="330" y2="270"/>
-              <line x1="420" y1="236" x2="420" y2="270"/>
-              <line x1="60" y1="270" x2="420" y2="270"/>
-              <line x1="240" y1="270" x2="240" y2="290"/>
-            </g>
-            <rect x="160" y="290" width="160" height="36" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
-            <text x="240" y="313" text-anchor="middle" fill="#1B2B4B" font-family="'Source Sans 3', sans-serif" font-size="13" font-weight="600">Recommendation</text>
-          </svg>
-        </div>
-      </div>
+      <div class="hero-content">
+        <span class="label">Independent Real Estate Advisory</span>
 
 ```
-  <!-- Banner card -->
-  <div class="hero-banner">
-    <div class="hero-banner-title">Institutional quality analysis for clients who do not have it in house.</div>
-    <p>Advisory first. Independent judgment. Clear recommendation. Representative work across sale readiness, acquisition advisory, lease strategy, business real estate structuring, and investor diligence.</p>
+    <div class="hero-top-row">
+      <div class="hero-top-left">
+        <h1>Clear judgment for real estate decisions where price, risk, and structure all <span class="accent">matter.</span></h1>
+      </div>
+      <div class="hero-callout">
+        <p>Harvest Real Estate Advisory is brought in before an important decision is made to test the economics, identify the real risks, and recommend a better structured path forward.</p>
+      </div>
+    </div>
+
+    <div class="hero-below-text">
+      <p>Commercial real estate decisions often involve smart professionals with limited scope. What is often missing is one experienced advisor whose job is to integrate the full commercial picture on the client's behalf.</p>
+    </div>
+
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="showPage('contact')">Start a Conversation
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <button class="btn-secondary" onclick="showPage('engagements')">Representative Engagements</button>
+    </div>
+
+    <div class="hero-diagram-wrap">
+      <svg class="hero-diagram-svg" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g font-family="Source Sans 3, sans-serif" font-size="12" font-weight="500">
+          <rect x="16" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="54" y="33" text-anchor="middle" fill="#3D4F63">Broker</text>
+          <rect x="108" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="146" y="33" text-anchor="middle" fill="#3D4F63">Attorney</text>
+          <rect x="200" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="238" y="33" text-anchor="middle" fill="#3D4F63">Lender</text>
+          <rect x="292" y="12" width="76" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="330" y="33" text-anchor="middle" fill="#3D4F63">Engineer</text>
+          <rect x="384" y="12" width="84" height="32" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="426" y="33" text-anchor="middle" fill="#3D4F63">Accountant</text>
+        </g>
+        <g stroke="#B0BCC8" stroke-width="1.2">
+          <line x1="54" y1="44" x2="54" y2="80"/><line x1="146" y1="44" x2="146" y2="80"/>
+          <line x1="238" y1="44" x2="238" y2="80"/><line x1="330" y1="44" x2="330" y2="80"/>
+          <line x1="426" y1="44" x2="426" y2="80"/>
+          <line x1="54" y1="80" x2="426" y2="80"/><line x1="240" y1="80" x2="240" y2="100"/>
+        </g>
+        <rect x="172" y="100" width="136" height="40" rx="6" fill="#1B2B4B"/>
+        <text x="240" y="126" text-anchor="middle" fill="#FFFFFF" font-family="Source Sans 3, sans-serif" font-size="15" font-weight="700" letter-spacing="0.12em">HARVEST</text>
+        <g stroke="#B0BCC8" stroke-width="1.2">
+          <line x1="240" y1="140" x2="240" y2="170"/><line x1="60" y1="170" x2="420" y2="170"/>
+          <line x1="60" y1="170" x2="60" y2="192"/><line x1="150" y1="170" x2="150" y2="192"/>
+          <line x1="240" y1="170" x2="240" y2="192"/><line x1="330" y1="170" x2="330" y2="192"/>
+          <line x1="420" y1="170" x2="420" y2="192"/>
+        </g>
+        <g font-family="Source Sans 3, sans-serif" font-size="11" font-weight="500">
+          <polygon points="60,192 100,214 60,236 20,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="60" y="218" text-anchor="middle" fill="#3D4F63">Price</text>
+          <polygon points="150,192 190,214 150,236 110,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="150" y="218" text-anchor="middle" fill="#3D4F63">Risk</text>
+          <polygon points="240,192 284,214 240,236 196,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="240" y="218" text-anchor="middle" fill="#3D4F63">Structure</text>
+          <polygon points="330,192 378,214 330,236 282,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="330" y="218" text-anchor="middle" fill="#3D4F63">Operations</text>
+          <polygon points="420,192 468,214 420,236 372,214" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+          <text x="420" y="218" text-anchor="middle" fill="#3D4F63">Performance</text>
+        </g>
+        <g stroke="#B0BCC8" stroke-width="1.2">
+          <line x1="60" y1="236" x2="60" y2="270"/><line x1="150" y1="236" x2="150" y2="270"/>
+          <line x1="240" y1="236" x2="240" y2="270"/><line x1="330" y1="236" x2="330" y2="270"/>
+          <line x1="420" y1="236" x2="420" y2="270"/>
+          <line x1="60" y1="270" x2="420" y2="270"/><line x1="240" y1="270" x2="240" y2="290"/>
+        </g>
+        <rect x="160" y="290" width="160" height="36" rx="4" fill="#FAFBFC" stroke="#DFE5EB" stroke-width="1.2"/>
+        <text x="240" y="313" text-anchor="middle" fill="#1B2B4B" font-family="Source Sans 3, sans-serif" font-size="13" font-weight="600">Recommendation</text>
+      </svg>
+    </div>
+
+    <div class="hero-banner">
+      <div class="hero-banner-title">Institutional quality analysis for clients who do not have it in house.</div>
+      <p>Advisory first. Independent judgment. Clear recommendation. Representative work across sale readiness, acquisition advisory, lease strategy, business real estate structuring, and investor diligence.</p>
+    </div>
   </div>
 </div>
 ```
