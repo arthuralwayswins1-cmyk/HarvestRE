@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Harvest Real Estate Advisory</title>
+<title>GERE Advisors — Greg Elmiger Real Estate Advisors</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&family=GFS+Didot&display=swap" rel="stylesheet" />
@@ -15,8 +15,8 @@
       <line x1="600" y1="260" x2="600" y2="540"/>
       <path d="M600 360 L530 430 L600 500 L670 430 Z" stroke-width="2"/>
     </g>
-    <text x="600" y="620" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#C4B08D" letter-spacing="0.08em">HARVEST</text>
-    <text x="600" y="660" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#C4B08D" letter-spacing="0.3em">REAL ESTATE ADVISORY</text>
+    <text x="600" y="620" text-anchor="middle" font-family="Georgia, serif" font-size="56" fill="#C4B08D" letter-spacing="0.18em">GERE</text>
+    <text x="600" y="660" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#C4B08D" letter-spacing="0.3em">ADVISORS</text>
   </svg>
 </template>
 <style>
@@ -315,6 +315,47 @@ p { margin-bottom: 1em; }
   position: relative; z-index: 2;
 }
 
+.hero-intro-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 0 0 22px 0;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--navy);
+}
+.hero-intro-name { color: var(--navy); }
+.hero-intro-sep { color: var(--gold); font-weight: 400; }
+.hero-intro-pron {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 14.5px;
+  color: var(--muted);
+}
+.hero-intro-pron em { color: var(--gold); font-style: italic; }
+.hero-intro-divider {
+  display: inline-block;
+  width: 28px; height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+.hero-intro-tag {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.005em;
+  font-size: 15.5px;
+  color: var(--navy-mid);
+}
+
 .hero-left h1 {
   font-family: var(--serif-display);
   font-weight: 400;
@@ -479,6 +520,11 @@ p { margin-bottom: 1em; }
   background: var(--white);
   border: 1px solid var(--line);
   overflow: hidden;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%239B8763' stroke-width='1' opacity='0.08'><circle cx='100' cy='100' r='62'/><circle cx='100' cy='100' r='18'/><g stroke-linecap='round'><line x1='100' y1='22' x2='100' y2='38'/><line x1='100' y1='162' x2='100' y2='178'/><line x1='22' y1='100' x2='38' y2='100'/><line x1='162' y1='100' x2='178' y2='100'/><line x1='44.8' y1='44.8' x2='56.1' y2='56.1'/><line x1='143.9' y1='143.9' x2='155.2' y2='155.2'/><line x1='155.2' y1='44.8' x2='143.9' y2='56.1'/><line x1='56.1' y1='143.9' x2='44.8' y2='155.2'/></g></g></svg>");
+  background-repeat: no-repeat;
+  background-position: 96% 92%;
+  background-size: 280px 280px;
 }
 .flow-chart-wrap::before,
 .flow-chart-wrap::after {
@@ -999,6 +1045,11 @@ p { margin-bottom: 1em; }
 .verdict-banner {
   background: var(--navy);
   padding: 64px 72px;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%239B8763' stroke-width='1' opacity='0.16'><circle cx='100' cy='100' r='62'/><circle cx='100' cy='100' r='18'/><g stroke-linecap='round'><line x1='100' y1='22' x2='100' y2='38'/><line x1='100' y1='162' x2='100' y2='178'/><line x1='22' y1='100' x2='38' y2='100'/><line x1='162' y1='100' x2='178' y2='100'/><line x1='44.8' y1='44.8' x2='56.1' y2='56.1'/><line x1='143.9' y1='143.9' x2='155.2' y2='155.2'/><line x1='155.2' y1='44.8' x2='143.9' y2='56.1'/><line x1='56.1' y1='143.9' x2='44.8' y2='155.2'/></g></g></svg>"), linear-gradient(var(--navy), var(--navy));
+  background-repeat: no-repeat;
+  background-position: 102% 50%, 0 0;
+  background-size: 360px 360px, auto;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 56px;
@@ -1424,6 +1475,10 @@ p { margin-bottom: 1em; }
   .hero-row { grid-template-columns: 1fr !important; gap: 36px; }
   .hero-left h1 { margin-bottom: 16px; }
   .hero-left h1 .rule { width: 44px; margin: 0 12px 8px 0; }
+  .hero-intro-line { font-size: 11px; gap: 8px 10px; margin-bottom: 18px; letter-spacing: 0.16em; }
+  .hero-intro-pron { font-size: 13.5px; }
+  .hero-intro-tag { font-size: 14px; }
+  .hero-intro-divider { display: none; }
   .hero-left .sub { font-size: 17px !important; line-height: 1.45; margin-top: 20px; }
   .hero-meta-row {
     margin-top: 32px;
@@ -1693,16 +1748,24 @@ p { margin-bottom: 1em; }
     <a class="logo" onclick="showPage('home')">
       <div class="logo-mark">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Subtle wheat-sheaf mark: a central spike with symmetrical grains -->
-          <path d="M12 3v18" stroke="#9B8763" stroke-width="1.2" stroke-linecap="round"/>
-          <path d="M12 7c-2.5-1-4-2.5-4-4 2 0 3.5 1 4 2.2M12 7c2.5-1 4-2.5 4-4-2 0-3.5 1-4 2.2" stroke="#9B8763" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-          <path d="M12 11c-2.5-1-4-2.5-4-4 2 0 3.5 1 4 2.2M12 11c2.5-1 4-2.5 4-4-2 0-3.5 1-4 2.2" stroke="#9B8763" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-          <path d="M12 15c-2.5-1-4-2.5-4-4 2 0 3.5 1 4 2.2M12 15c2.5-1 4-2.5 4-4-2 0-3.5 1-4 2.2" stroke="#9B8763" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <!-- Subtle gear mark: 8 teeth, central bore, suggests synchronized disciplines -->
+          <g stroke="#9B8763" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <circle cx="12" cy="12" r="4.6"/>
+            <circle cx="12" cy="12" r="1.4"/>
+            <line x1="12" y1="3.6" x2="12" y2="5.6"/>
+            <line x1="12" y1="18.4" x2="12" y2="20.4"/>
+            <line x1="3.6" y1="12" x2="5.6" y2="12"/>
+            <line x1="18.4" y1="12" x2="20.4" y2="12"/>
+            <line x1="6.05" y1="6.05" x2="7.46" y2="7.46"/>
+            <line x1="16.54" y1="16.54" x2="17.95" y2="17.95"/>
+            <line x1="17.95" y1="6.05" x2="16.54" y2="7.46"/>
+            <line x1="7.46" y1="16.54" x2="6.05" y2="17.95"/>
+          </g>
         </svg>
       </div>
       <div class="logo-text">
-        <span class="logo-name">Harvest</span>
-        <span class="logo-sub">Real Estate Advisory</span>
+        <span class="logo-name">GERE</span>
+        <span class="logo-sub">Advisors</span>
       </div>
     </a>
     <nav class="nav-links" id="navLinks">
@@ -1729,13 +1792,20 @@ p { margin-bottom: 1em; }
 
       <div class="hero-eyebrow">
         <span class="hero-eyebrow-dot"></span>
-        <span class="hero-eyebrow-text">Independent Advisory · Est. 2024</span>
+        <span class="hero-eyebrow-text">Independent Advisory · Est. 2026</span>
         <span class="hero-eyebrow-meta">Red Bank, New Jersey</span>
       </div>
 
       <div class="hero-row">
         <!-- LEFT: display headline -->
         <div class="hero-left reveal">
+          <p class="hero-intro-line">
+            <span class="hero-intro-name">GERE Advisors</span>
+            <span class="hero-intro-sep">—</span>
+            <span class="hero-intro-pron">\ˈ<em>geer</em>\</span>
+            <span class="hero-intro-divider"></span>
+            <span class="hero-intro-tag">the mechanism behind the decision.</span>
+          </p>
           <h1 class="display">
             <span class="rule"></span>Clear judgment<br />
             for real estate<br />
@@ -1778,14 +1848,14 @@ p { margin-bottom: 1em; }
 
           <div class="spec-box-header">
             <span class="spec-box-title">Statement of Practice</span>
-            <span class="spec-box-ref">§ 01 / HRA</span>
+            <span class="spec-box-ref">§ 01 / GERE</span>
           </div>
 
           <p class="spec-box-lede">
-            <span class="drop">H</span>arvest Real Estate Advisory is brought in before an important decision is made — to test the economics, identify the real risks, and recommend a better structured path forward.
+            <span class="drop">G</span>ERE Advisors is brought in before an important decision is made — to test the economics, identify the real risks, and recommend a better structured path forward.
           </p>
           <p class="spec-box-body">
-            Advisory first. Independent judgment. A single clear recommendation. Representative work across sale readiness, acquisition advisory, lease strategy, business real estate structuring, and investor diligence.
+            <em style="font-family:var(--serif);font-size:1.05em;color:var(--gold);">Where the disciplines mesh.</em> Advisory first. Independent judgment. A single clear recommendation. Representative work across sale readiness, acquisition advisory, lease strategy, business real estate structuring, and investor diligence.
           </p>
 
           <div class="spec-box-tags">
@@ -1859,10 +1929,10 @@ p { margin-bottom: 1em; }
           <path class="flow-line" id="line-in-3" d="M 720 116 L 720 156 L 525 156" data-len="236"/>
           <path class="flow-line" id="line-in-4" d="M 915 116 L 915 156 L 525 156" data-len="440"/>
 
-          <!-- Feed into HARVEST core -->
+          <!-- Feed into GERE core -->
           <path class="flow-line" id="line-to-core" d="M 525 156 L 525 200" data-len="44"/>
 
-          <!-- ===== CORE: HARVEST ===== -->
+          <!-- ===== CORE: GERE ===== -->
           <g class="flow-node-appear" data-idx="5">
             <rect class="flow-node-core" x="400" y="200" width="250" height="72" rx="2"/>
             <!-- Top gold accent -->
@@ -1870,8 +1940,8 @@ p { margin-bottom: 1em; }
             <!-- Corner marks -->
             <path d="M 400 200 L 412 200 M 400 200 L 400 212" stroke="#9B8763" stroke-width="1" fill="none"/>
             <path d="M 650 272 L 638 272 M 650 272 L 650 260" stroke="#9B8763" stroke-width="1" fill="none"/>
-            <text class="flow-label-core" x="525" y="234" text-anchor="middle">HARVEST</text>
-            <text x="525" y="252" text-anchor="middle" font-family="'GFS Didot', serif" font-size="11" font-weight="400" fill="#C4B08D" letter-spacing="0.3em">REAL ESTATE ADVISORY</text>
+            <text class="flow-label-core" x="525" y="234" text-anchor="middle">GERE</text>
+            <text x="525" y="252" text-anchor="middle" font-family="'GFS Didot', serif" font-size="11" font-weight="400" fill="#C4B08D" letter-spacing="0.3em">ADVISORS</text>
             <text x="525" y="265" text-anchor="middle" font-family="'Source Sans 3', sans-serif" font-size="9" font-weight="500" fill="#C4B08D" letter-spacing="0.2em" opacity="0.75">INDEPENDENT JUDGMENT</text>
           </g>
 
@@ -1955,8 +2025,8 @@ p { margin-bottom: 1em; }
       <div class="two-col reveal">
         <div class="essay-col">
           <p>Brokers bring market access. Attorneys negotiate documents. Lenders structure financing. Engineers evaluate their piece of the puzzle. The advice each provides is usually competent within its lane — but the lanes rarely meet.</p>
-          <p class="callout">Harvest exists to fill that gap.</p>
-          <p>Harvest is engaged when a sale, purchase, lease, renewal, inherited property issue, business transition, or capital commitment becomes important enough to require more than separate opinions from separate disciplines. The work is direct, analytical, and prioritized.</p>
+          <p class="callout">GERE exists to fill that gap.</p>
+          <p>GERE is engaged when a sale, purchase, lease, renewal, inherited property issue, business transition, or capital commitment becomes important enough to require more than separate opinions from separate disciplines. The work is direct, analytical, and prioritized.</p>
         </div>
         <div class="essay-col" style="padding-top:20px;">
           <div class="stat-row" style="margin-top:0;">
@@ -1992,7 +2062,7 @@ p { margin-bottom: 1em; }
     <div class="container">
       <div class="section-header reveal">
         <div>
-          <span class="section-number">§ 04 · Whom Harvest Serves</span>
+          <span class="section-number">§ 04 · Whom GERE Serves</span>
           <h2>Built for principals &amp; the advisors who support them.</h2>
         </div>
         <div class="section-header-right">
@@ -2054,11 +2124,11 @@ p { margin-bottom: 1em; }
     </div>
   </section>
 
-  <!-- How Harvest Works -->
+  <!-- How GERE Works -->
   <section class="section section-paper">
     <div class="container">
       <div class="section-header-center reveal">
-        <span class="section-number">§ 05 · How Harvest Works</span>
+        <span class="section-number">§ 05 · How GERE Works</span>
         <h2 class="display" style="font-size:clamp(32px,3.8vw,48px);">Advisory first. Transaction when warranted.</h2>
         <p style="font-size:17px;color:var(--muted);margin-top:20px;line-height:1.65;">Three stages — the same shape regardless of asset type, deal size, or side of the table.</p>
       </div>
@@ -2074,13 +2144,13 @@ p { margin-bottom: 1em; }
           <span class="step-num">STAGE TWO</span>
           <div class="step-glyph">II</div>
           <h4>Clear Recommendation</h4>
-          <p>Harvest does not stop at diagnosis. The deliverable is a clear recommendation, prioritized issues, and defined next steps required to move forward intelligently.</p>
+          <p>GERE does not stop at diagnosis. The deliverable is a clear recommendation, prioritized issues, and defined next steps required to move forward intelligently.</p>
         </div>
         <div class="process-step">
           <span class="step-num">STAGE THREE</span>
           <div class="step-glyph">III</div>
           <h4>Continuity Through Execution</h4>
-          <p>When the right answer is to proceed, Harvest remains involved — coordinating the transaction, preserving continuity, and keeping the matter aligned with the client's objectives.</p>
+          <p>When the right answer is to proceed, GERE remains involved — coordinating the transaction, preserving continuity, and keeping the matter aligned with the client's objectives.</p>
         </div>
       </div>
     </div>
@@ -2095,7 +2165,7 @@ p { margin-bottom: 1em; }
           <h2>Decisions that required a complete commercial view.</h2>
         </div>
         <div class="section-header-right">
-          Harvest assignments differ in detail but share a common purpose: protect value, improve structure, and give clients a more intelligent path forward.
+          GERE assignments differ in detail but share a common purpose: protect value, improve structure, and give clients a more intelligent path forward.
         </div>
       </div>
 
@@ -2146,7 +2216,7 @@ p { margin-bottom: 1em; }
   <section class="section-compact section-paper">
     <div class="container">
       <div class="quote-block reveal">
-        <p>Harvest is not brought in to add paper to the process. Harvest is brought in to bring the decision into focus.</p>
+        <p>GERE is not brought in to add paper to the process. GERE is brought in to bring the decision into focus.</p>
         <span class="attr">— The Practice</span>
       </div>
     </div>
@@ -2168,7 +2238,7 @@ p { margin-bottom: 1em; }
       <div class="two-col reveal">
         <div class="essay-col">
           <p>Gregory's perspective is grounded in more than 30 years across ownership, occupancy, operations, portfolio oversight, and advisory work, from major institutional platforms to private owners and operators.</p>
-          <p>Before founding Harvest, Gregory advised some of the largest real estate investment managers in the world and saw firsthand how different the quality of decision support can be outside institutional real estate. Harvest was built to bring that higher standard of judgment to clients who need it but do not have it in house.</p>
+          <p>Before founding GERE Advisors, Gregory advised some of the largest real estate investment managers in the world and saw firsthand how different the quality of decision support can be outside institutional real estate. GERE was built to bring that higher standard of judgment to clients who need it but do not have it in house.</p>
           <button class="btn-link" onclick="showPage('gregory')" style="margin-top:8px;">
             Read Full Bio <span class="arrow">→</span>
           </button>
@@ -2192,10 +2262,10 @@ p { margin-bottom: 1em; }
       <div class="verdict-banner reveal">
         <div>
           <h2>When the decision matters, start with judgment.</h2>
-          <p>If you are evaluating a sale, purchase, lease, renewal, inherited property issue, or other important real estate matter, Harvest can help bring the full picture into focus.</p>
+          <p>If you are evaluating a sale, purchase, lease, renewal, inherited property issue, or other important real estate matter, GERE can help bring the full picture into focus.</p>
         </div>
         <button class="btn btn-gold" onclick="showPage('contact')">
-          <span>Contact Harvest</span>
+          <span>Contact GERE</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </div>
@@ -2208,10 +2278,10 @@ p { margin-bottom: 1em; }
   <section class="section">
     <div class="container">
       <div class="reveal">
-        <span class="section-number">§ About Harvest</span>
+        <span class="section-number">§ About GERE</span>
         <h1 class="display" style="max-width:880px;margin-bottom:28px;">One advisor. The full picture. Before the decision hardens.</h1>
         <p style="font-family:var(--serif);font-style:italic;font-size:22px;max-width:760px;margin-bottom:80px;color:var(--navy-mid);line-height:1.5;">
-          Harvest Real Estate Advisory was created to provide something many private clients, business owners, and advisors do not have when commercial real estate decisions become consequential: one independent advisor with the experience to see the full picture.
+          GERE Advisors — short for <em>Greg Elmiger Real Estate Advisors</em>, pronounced <em>“gear”</em> — was created to provide something many private clients, business owners, and advisors do not have when commercial real estate decisions become consequential: one independent advisor with the experience to see the full picture.
         </p>
       </div>
 
@@ -2219,7 +2289,7 @@ p { margin-bottom: 1em; }
         <div class="pillar">
           <span class="pillar-index">I.</span>
           <h4>Independent Judgment</h4>
-          <p>Harvest is engaged to evaluate the real estate question on its own merits. The work does not exist to justify a transaction. It exists to help the client arrive at the right answer.</p>
+          <p>GERE is engaged to evaluate the real estate question on its own merits. The work does not exist to justify a transaction. It exists to help the client arrive at the right answer.</p>
         </div>
         <div class="pillar">
           <span class="pillar-index">II.</span>
@@ -2234,7 +2304,7 @@ p { margin-bottom: 1em; }
         <div class="pillar">
           <span class="pillar-index">IV.</span>
           <h4>Continuity Through Execution</h4>
-          <p>When a matter moves forward, Harvest can remain involved to coordinate the process and preserve context across legal, financial, brokerage, lending, and diligence workstreams.</p>
+          <p>When a matter moves forward, GERE can remain involved to coordinate the process and preserve context across legal, financial, brokerage, lending, and diligence workstreams.</p>
         </div>
       </div>
 
@@ -2249,7 +2319,7 @@ p { margin-bottom: 1em; }
       </div>
 
       <div class="quote-block reveal" style="margin:40px auto 96px;">
-        <p>Harvest is not built around pushing a transaction forward. It is built around helping clients make better real estate decisions before value is lost, structure goes wrong, or incomplete analysis becomes expensive.</p>
+        <p>GERE is not built around pushing a transaction forward. It is built around helping clients make better real estate decisions before value is lost, structure goes wrong, or incomplete analysis becomes expensive.</p>
       </div>
 
       <div class="reveal">
@@ -2279,7 +2349,7 @@ p { margin-bottom: 1em; }
     <div class="container">
       <div class="bio-layout">
         <div class="bio-portrait reveal">
-          <span class="bio-portrait-caption">Principal · Est. 2024</span>
+          <span class="bio-portrait-caption">Principal · Est. 2026</span>
           <span class="bio-initials">GE</span>
           <div class="bio-portrait-text">
             <h3>Gregory Elmiger</h3>
@@ -2292,7 +2362,7 @@ p { margin-bottom: 1em; }
           <div class="gold-line"></div>
 
           <div class="bio-section">
-            <p class="bio-lede">Gregory Elmiger is the founder of Harvest Real Estate Advisory — a commercial real estate professional with more than 30 years of experience across ownership, occupancy, operations, portfolio oversight, and advisory work.</p>
+            <p class="bio-lede">Gregory Elmiger is the founder of GERE Advisors — a commercial real estate professional with more than 30 years of experience across ownership, occupancy, operations, portfolio oversight, and advisory work.</p>
             <p>His perspective has been shaped by seeing real estate decisions from multiple sides of the table and applying that experience to situations where money, risk, structure, and timing all matter at once.</p>
           </div>
 
@@ -2308,7 +2378,7 @@ p { margin-bottom: 1em; }
           </div>
 
           <div class="bio-section">
-            <h4>Why Harvest Was Created</h4>
+            <h4>Why GERE Was Created</h4>
             <p>In institutional real estate, important decisions are usually supported by integrated teams, disciplined underwriting, and clear frameworks for evaluating risk. Outside that world, the same level of support is often missing. Business owners, families, and private clients are frequently surrounded by smart professionals, but no one is charged with integrating the full real estate picture on their behalf. Harvest was created to close that gap.</p>
           </div>
 
@@ -2332,8 +2402,8 @@ p { margin-bottom: 1em; }
   <section class="section">
     <div class="container">
       <div class="reveal">
-        <span class="section-number">§ When to Call Harvest</span>
-        <h1 class="display" style="max-width:880px;margin-bottom:24px;">Harvest is most valuable <em class="accent" style="font-style:italic;">before</em> the decision hardens.</h1>
+        <span class="section-number">§ When to Call GERE</span>
+        <h1 class="display" style="max-width:880px;margin-bottom:24px;">GERE is most valuable <em class="accent" style="font-style:italic;">before</em> the decision hardens.</h1>
         <p style="font-family:var(--serif);font-style:italic;font-size:22px;max-width:720px;margin-bottom:72px;color:var(--navy-mid);line-height:1.5;">The right time to engage is while the structure, price, or path can still be improved.</p>
       </div>
 
@@ -2341,32 +2411,32 @@ p { margin-bottom: 1em; }
         <div class="call-item">
           <span class="call-num">I.</span>
           <h4>Before selling a property</h4>
-          <p>When an owner is thinking about selling, the real work starts before a broker is engaged. Harvest identifies title issues, loan timing constraints, lease documentation gaps, physical condition items, financial reporting weaknesses, and other issues that affect pricing and buyer leverage.</p>
+          <p>When an owner is thinking about selling, the real work starts before a broker is engaged. GERE identifies title issues, loan timing constraints, lease documentation gaps, physical condition items, financial reporting weaknesses, and other issues that affect pricing and buyer leverage.</p>
         </div>
         <div class="call-item">
           <span class="call-num">II.</span>
           <h4>Before signing a letter of intent</h4>
-          <p>A letter of intent can lock a client into the wrong assumptions before the real estate has been structured correctly. Harvest is often engaged when a proposed sale, purchase, leaseback, or business transaction has real estate consequences that need to be understood before any commitment is made.</p>
+          <p>A letter of intent can lock a client into the wrong assumptions before the real estate has been structured correctly. GERE is often engaged when a proposed sale, purchase, leaseback, or business transaction has real estate consequences that need to be understood before any commitment is made.</p>
         </div>
         <div class="call-item">
           <span class="call-num">III.</span>
           <h4>Before buying a building for the business</h4>
-          <p>Owner-occupied real estate decisions require more than market access. Harvest helps clients evaluate own versus lease tradeoffs, pricing, financing structures, property fit, condition issues, and the business implications of ownership before capital is committed.</p>
+          <p>Owner-occupied real estate decisions require more than market access. GERE helps clients evaluate own versus lease tradeoffs, pricing, financing structures, property fit, condition issues, and the business implications of ownership before capital is committed.</p>
         </div>
         <div class="call-item">
           <span class="call-num">IV.</span>
           <h4>When business &amp; real estate need to be separated</h4>
-          <p>Many private companies own the building they occupy but have never structured the real estate independently. Harvest helps clients think through leaseback structures, bundled sale risks, value preservation, and the proper treatment of the real estate when the business is being sold or recapitalized.</p>
+          <p>Many private companies own the building they occupy but have never structured the real estate independently. GERE helps clients think through leaseback structures, bundled sale risks, value preservation, and the proper treatment of the real estate when the business is being sold or recapitalized.</p>
         </div>
         <div class="call-item">
           <span class="call-num">V.</span>
           <h4>When inherited real estate becomes a real decision</h4>
-          <p>Families often inherit operating real estate without a clear picture of market value, capital needs, documentation quality, or sale readiness. Harvest helps create an objective framework for deciding whether to hold, improve, refinance, or sell.</p>
+          <p>Families often inherit operating real estate without a clear picture of market value, capital needs, documentation quality, or sale readiness. GERE helps create an objective framework for deciding whether to hold, improve, refinance, or sell.</p>
         </div>
         <div class="call-item">
           <span class="call-num">VI.</span>
           <h4>Before accepting a lease or renewal by default</h4>
-          <p>Tenants and users often assume renewal is the easiest answer. Sometimes it is. Sometimes it is not. Harvest helps evaluate renewal, relocation, assignment, and occupancy alternatives with a full view of economics, flexibility, and business impact.</p>
+          <p>Tenants and users often assume renewal is the easiest answer. Sometimes it is. Sometimes it is not. GERE helps evaluate renewal, relocation, assignment, and occupancy alternatives with a full view of economics, flexibility, and business impact.</p>
         </div>
       </div>
 
@@ -2405,7 +2475,7 @@ p { margin-bottom: 1em; }
           </div>
           <div class="eng-body">
             <h3>Family-Owned Multifamily Asset</h3>
-            <p>A family ownership group needed a complete view of whether to sell or continue holding a 24-unit apartment property. Harvest identified an unrecorded deed transfer, loan timing risk against an 18-month maturity window, six units renting below market, documentation gaps that would have stalled buyer underwriting, and deferred maintenance items across three buildings. Three strategic alternatives were evaluated on a common financial basis, from an as-is sale to a full value-add hold program.</p>
+            <p>A family ownership group needed a complete view of whether to sell or continue holding a 24-unit apartment property. GERE identified an unrecorded deed transfer, loan timing risk against an 18-month maturity window, six units renting below market, documentation gaps that would have stalled buyer underwriting, and deferred maintenance items across three buildings. Three strategic alternatives were evaluated on a common financial basis, from an as-is sale to a full value-add hold program.</p>
             <div class="eng-result"><p>The family received a clear framework for sale readiness, hold economics, and per-member net proceeds under each scenario before the transaction process began.</p></div>
           </div>
           <div class="eng-tags">
@@ -2424,8 +2494,8 @@ p { margin-bottom: 1em; }
           </div>
           <div class="eng-body">
             <h3>Business Sale with Embedded Real Estate</h3>
-            <p>A second-generation fire protection contractor received private equity interest for the operating business, but the real estate had not been structured separately. Harvest demonstrated that a bundled sale would produce negative net real estate proceeds after accounting for CMBS debt, a yield maintenance penalty exceeding $330,000, and the resulting tax liability. The building's independent market value was approximately 86% to 92% of the operating business enterprise value, yet was receiving no equivalent planning.</p>
-            <div class="eng-result"><p>Harvest recommended a coordinated leaseback structure that preserved approximately $2.5 million in real estate value. The owner moved from an economically broken path to a structure that protected both assets.</p></div>
+            <p>A second-generation fire protection contractor received private equity interest for the operating business, but the real estate had not been structured separately. GERE demonstrated that a bundled sale would produce negative net real estate proceeds after accounting for CMBS debt, a yield maintenance penalty exceeding $330,000, and the resulting tax liability. The building's independent market value was approximately 86% to 92% of the operating business enterprise value, yet was receiving no equivalent planning.</p>
+            <div class="eng-result"><p>GERE recommended a coordinated leaseback structure that preserved approximately $2.5 million in real estate value. The owner moved from an economically broken path to a structure that protected both assets.</p></div>
           </div>
           <div class="eng-tags">
             <div class="eng-tag-row"><span class="k">Asset</span><span class="v">Industrial</span></div>
@@ -2462,7 +2532,7 @@ p { margin-bottom: 1em; }
           </div>
           <div class="eng-body">
             <h3>Multifamily Sponsor Opportunity</h3>
-            <p>A family office considering a $6.8 million equity investment in an 84-unit multifamily sponsor deal engaged Harvest for an independent review. Analysis revealed that the sponsor's renovation budget was 26% below current contractor pricing, and the LP operating agreement contained an uncapped capital call provision creating open-ended investor exposure. Harvest stress-tested the underwriting across occupancy, rent growth, exit cap rate, and renovation cost scenarios.</p>
+            <p>A family office considering a $6.8 million equity investment in an 84-unit multifamily sponsor deal engaged GERE for an independent review. Analysis revealed that the sponsor's renovation budget was 26% below current contractor pricing, and the LP operating agreement contained an uncapped capital call provision creating open-ended investor exposure. Harvest stress-tested the underwriting across occupancy, rent growth, exit cap rate, and renovation cost scenarios.</p>
             <div class="eng-result"><p>The investment remained viable but only with specific pre-closing protections: a revised renovation budget, a hard cap on capital calls, and a key person provision. Two conditions were designated as non-negotiable.</p></div>
           </div>
           <div class="eng-tags">
@@ -2481,7 +2551,7 @@ p { margin-bottom: 1em; }
           </div>
           <div class="eng-body">
             <h3>Lease &amp; Occupancy Repositioning</h3>
-            <p>A tenant preparing to renew and renovate a dated office suite was shown a better answer through a move-in-ready assignment in a superior Class A building. Harvest restructured the occupancy path around lower effective cost, eliminated renovation risk and downtime, and secured better long-term flexibility.</p>
+            <p>A tenant preparing to renew and renovate a dated office suite was shown a better answer through a move-in-ready assignment in a superior Class A building. GERE restructured the occupancy path around lower effective cost, eliminated renovation risk and downtime, and secured better long-term flexibility.</p>
             <div class="eng-result"><p>The tenant avoided major capital spending, improved the workplace, and secured a stronger occupancy outcome at lower effective cost.</p></div>
           </div>
           <div class="eng-tags">
@@ -2495,7 +2565,7 @@ p { margin-bottom: 1em; }
       </div>
 
       <div style="text-align:center;margin-top:72px;max-width:640px;margin-left:auto;margin-right:auto;">
-        <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-bottom:28px;">Representative engagements show how Harvest thinks. Full reports are shared in confidence with prospective clients during initial conversations.</p>
+        <p style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--muted);margin-bottom:28px;">Representative engagements show how GERE thinks. Full reports are shared in confidence with prospective clients during initial conversations.</p>
         <button class="btn btn-primary" onclick="showPage('contact')">
           <span>Request a Conversation</span>
         </button>
@@ -2512,7 +2582,7 @@ p { margin-bottom: 1em; }
         <span class="section-number">§ For Advisors</span>
         <h1 class="display" style="color:var(--white);max-width:860px;margin-bottom:24px;">The real estate specialist your clients need. In your network.</h1>
         <p style="font-family:var(--serif);font-style:italic;font-size:22px;max-width:720px;margin-bottom:72px;color:rgba(255,255,255,0.75);line-height:1.5;">
-          Harvest works alongside wealth managers, CPAs, attorneys, lenders, and other professionals whose clients face meaningful commercial real estate decisions. The role is not to replace the existing advisory team — it is to strengthen it.
+          GERE works alongside wealth managers, CPAs, attorneys, lenders, and other professionals whose clients face meaningful commercial real estate decisions. The role is not to replace the existing advisory team — it is to strengthen it.
         </p>
       </div>
 
@@ -2556,12 +2626,12 @@ p { margin-bottom: 1em; }
       </div>
 
       <div style="max-width:760px;margin-top:88px;" class="reveal">
-        <span class="label" style="color:var(--gold-light);">Why advisors bring in Harvest</span>
+        <span class="label" style="color:var(--gold-light);">Why advisors bring in GERE</span>
         <h3 style="color:var(--white);margin-bottom:24px;font-family:var(--serif-display);font-weight:400;font-size:32px;">A specialist the client trusts — and you keep.</h3>
         <p style="color:rgba(255,255,255,0.75);font-size:16.5px;margin-bottom:18px;line-height:1.8;">Wealth managers, financial advisors, CPAs, and attorneys are regularly pulled into real estate questions that fall outside their core expertise. Their clients are pitched private deals, asked to buy buildings, or confronted with inherited assets they do not fully understand.</p>
         <p style="color:rgba(255,255,255,0.75);font-size:16.5px;margin-bottom:18px;line-height:1.8;">The incentives are naturally aligned. Advisors compensated on assets under management do not benefit when clients move capital into illiquid real estate they do not understand. They benefit when clients make disciplined decisions, avoid preventable mistakes, and keep capital deployed wisely.</p>
         <p style="color:var(--gold-light);font-size:16.5px;font-family:var(--serif);font-style:italic;font-weight:500;line-height:1.55;">
-          A wealth manager can engage Harvest to review a proposed investment, pay a modest advisory fee for independent analysis, and potentially protect a much larger client relationship in the process.
+          A wealth manager can engage GERE to review a proposed investment, pay a modest advisory fee for independent analysis, and potentially protect a much larger client relationship in the process.
         </p>
       </div>
 
@@ -2586,7 +2656,7 @@ p { margin-bottom: 1em; }
           <span class="section-number">§ Contact</span>
           <h1 class="display" style="font-size:clamp(42px,4.8vw,60px);margin-bottom:8px;">Start a Conversation</h1>
           <div class="gold-line"></div>
-          <p class="lead-text">Harvest is best engaged while there is still time to improve the decision. A brief note on the situation is enough to get started.</p>
+          <p class="lead-text">GERE is best engaged while there is still time to improve the decision. A brief note on the situation is enough to get started.</p>
 
           <div class="contact-detail">
             <div class="contact-detail-label">Principal</div>
@@ -2594,7 +2664,7 @@ p { margin-bottom: 1em; }
           </div>
           <div class="contact-detail">
             <div class="contact-detail-label">Firm</div>
-            <div class="contact-detail-value">Harvest Real Estate Advisory</div>
+            <div class="contact-detail-value">GERE Advisors</div>
           </div>
           <div class="contact-detail">
             <div class="contact-detail-label">Location</div>
@@ -2606,7 +2676,7 @@ p { margin-bottom: 1em; }
           </div>
           <div class="contact-detail">
             <div class="contact-detail-label">Email</div>
-            <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#6205100705220a03101407111610070306140b110d101b4c010d0f"><span class="__cf_email__" data-cfemail="2c4b5e494b6c444d5e5a495f585e494d485a455f435e55024f4341">[email&#160;protected]</span></a></div>
+            <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection#7b1c091e1c3b1c1e091e1a1f0d120814090855181416"><span class="__cf_email__" data-cfemail="a5c2d7c0c2e5c2c0d7c0c4c1d3ccd6cad7d68bc6cac8">[email&#160;protected]</span></a></div>
           </div>
 
           <div style="margin-top:48px;padding-top:32px;border-top:1px solid var(--line);">
@@ -2669,14 +2739,14 @@ p { margin-bottom: 1em; }
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="footer-logo-name">Harvest</div>
-        <span class="footer-logo-sub">Real Estate Advisory</span>
+        <div class="footer-logo-name">GERE</div>
+        <span class="footer-logo-sub">Advisors</span>
         <p>Independent commercial real estate judgment for decisions that require a complete commercial view.</p>
       </div>
       <div class="footer-col">
         <h5>Navigate</h5>
         <a onclick="showPage('home')">Home</a>
-        <a onclick="showPage('about')">About Harvest</a>
+        <a onclick="showPage('about')">About GERE</a>
         <a onclick="showPage('gregory')">Gregory Elmiger</a>
         <a onclick="showPage('when')">When to Call</a>
       </div>
@@ -2689,12 +2759,13 @@ p { margin-bottom: 1em; }
       <div class="footer-col">
         <h5>Connect</h5>
         <a href="tel:9084331427">908.433.1427</a>
-        <a href="/cdn-cgi/l/email-protection#88effaedefc8e0e9fafeedfbfcfaede9ecfee1fbe7faf1a6ebe7e5"><span class="__cf_email__" data-cfemail="3d5a4f585a7d555c4f4b584e494f585c594b544e524f44135e5250">[email&#160;protected]</span></a>
+        <a href="/cdn-cgi/l/email-protection#385f4a5d5f785f5d4a5d595c4e514b574a4b165b5755"><span class="__cf_email__" data-cfemail="660114030126010314030702100f150914154805090b">[email&#160;protected]</span></a>
+        <a href="https://gereadvisors.com">gereadvisors.com</a>
         <a>Red Bank, New Jersey</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Harvest Real Estate Advisory. All rights reserved.</span>
+      <span>© 2026 GERE Advisors · Greg Elmiger Real Estate Advisors. All rights reserved.</span>
       <span>Gregory Elmiger &nbsp;·&nbsp; Red Bank, NJ</span>
     </div>
   </div>
@@ -2910,7 +2981,7 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "showFlowReplay": true
 }/*EDITMODE-END*/;
 
-function HarvestTweaks() {
+function GereTweaks() {
   const [tweaks, setTweaks] = useTweaks(TWEAK_DEFAULTS);
 
   React.useEffect(() => {
@@ -3014,7 +3085,7 @@ function HarvestTweaks() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<HarvestTweaks />);
+ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<GereTweaks />);
 </script>
 
 </body>
